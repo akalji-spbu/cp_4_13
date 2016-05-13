@@ -91,7 +91,7 @@ double det(Matrix &U, unsigned SwapsNum){
         return -det;
 }
 
-void SOLE(Matrix &L,Matrix &U,Matrix &b,Matrix &x,int rank){
+void SOLE(Matrix &L,Matrix &U,Matrix &b,Matrix &x,unsigned rank){
     unsigned n=L.Get_vsize();
     Matrix y(n,1);
     for (unsigned i=0; i<n;++i){

@@ -13,6 +13,7 @@
 #include <cmath>
 #include "matrix.hpp"
 #include "SLE.h"
+
 Matrix Moments(double a, double b);
 double Newton_Cotes(double a, double b);
 double Gauss(double a, double b);
