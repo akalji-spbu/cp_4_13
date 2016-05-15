@@ -14,8 +14,12 @@
 #include "matrix.hpp"
 #include "SLE.h"
 
-Matrix Moments(double a, double b);
-double Newton_Cotes(double a, double b);
+double Func(double x);
+double g(double x, double A, double B, double C, double D);
+double dg(double x, double A, double B, double C);
+double newton_r(double x, double a, double b, double A, double B, double C, double D);
+void newton(double* m, double a, double b, double A, double B, double C, double D);
+double Newton_K(double a, double b);
 double Gauss(double a, double b);
 
 #endif /* integral_hpp */
